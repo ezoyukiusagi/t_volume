@@ -13,7 +13,7 @@ async def main():
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
         })
 
-        await page.goto('https://finance.yahoo.co.jp/stocks/ranking/up?market=tokyoAll&term=daily',timeout=60000)
+        await page.goto('https://finance.yahoo.co.jp/stocks/ranking/volume?market=tokyoAll&term=daily&page=1',timeout=60000)
 
         await page.wait_for_load_state("networkidle")
 
